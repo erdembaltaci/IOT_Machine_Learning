@@ -194,7 +194,6 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
   ```
       Yorum: Model, düşük performans gösterdiği için ek özellik mühendisliği veya daha karmaşık algoritmalar kullanılabilir.
 
-
 ##### Alerts (Decision Tree Classifier)
 
 - Doğruluk: 0.30
@@ -220,8 +219,6 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
    ```
     Yorum: Yüksek bir doğruluk oranı, tahminler güvenilir.
 
-&nbsp;
-
 ## 🔭 Sonuçların Değerlendirilmesi
 
 Sonuçlar iş problemlerine nasıl uygulanabilir?
@@ -241,7 +238,6 @@ project/  <br>
 ├── visualization.py           # Görselleştirme modülü <br>
 
 &nbsp;
-
 
 ## Araçlar ve Kütüphaneler
 #### Programlama Dili: 
