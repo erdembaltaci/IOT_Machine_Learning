@@ -9,7 +9,9 @@ Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğr
 - Değerlendirme: Uygun metriklerle model performansını değerlendirmek.
 - Döküman Hazırlama: Tüm süreci, kodu ve sonuçları net bir şekilde açıklamak.
 
+
 ## Veri Seti
+
 ### Açıklama
 Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunlardan oluşmaktadır:
 
@@ -22,3 +24,112 @@ Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunl
 - Energy_Consumption_kWh: Enerji tüketimi (kWh cinsinden).
 - Connection_Status: Makine bağlantı durumu (0 veya 1).
 - Alerts: Makine tarafından tetiklenen uyarılar.
+
+### Kaynak
+Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım firmasından alınmıştır.
+
+## Metodoloji
+
+### 1. Veri Önişleme
+
+- Eksik veriler uygun stratejilerle doldurulmuştur (sayısal veriler için ortalama, kategorik veriler için en sık değer).
+- Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
+- Zaman tabanlı özellikler çıkarılmıştır (saat, gün).
+- Aşağıdaki gibi ek özellikler mühendisliği yapılmıştır:
+  - Bir üretim birimi başına enerji tüketimi.
+  - Titreşim ve sıcaklık oranı.
+ 
+### 2. Veri Görselleştirme
+
+- Temel sayısal değişkenler için histogramlar.
+- Korelasyon matrisi ısı haritası.
+- Çoklu değişken ilişkileri için 3D dağılım grafikleri.
+- Aykırı değerleri belirlemek için kutu grafikleri.
+
+### 3. Model Eğitimi ve Değerlendirme
+
+#### Sınıflandırma Görevleri
+
+- Error_Status: Makine hataları Logistic Regression ile tahmin edilecek.
+- Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilecek.
+- Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilecek.
+
+#### Regresyon Görevi
+
+- Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilecek.
+
+### 4. Performans Metrikleri
+
+#### Sınıflandırma
+
+- Doğruluk (Accuracy)
+- Kesinlik (Precision)
+- Duyarlılık (Recall)
+- F1 Skoru
+
+#### Regresyon
+
+- Ortalama Kare Hatası (MSE)
+- R² Skoru
+
+## Sonuçlar
+
+#### Model Performansı
+
+##### Error_Status
+
+##### - Logistic Regression
+
+- Doğruluk: 0.55
+- Kesinlik: 0.55
+- Duyarlılık: 0.55
+- F1 Skoru: 0.55
+
+##### Alerts
+
+##### - Decision Tree Classifier
+
+- Doğruluk: 0.30
+- Kesinlik: 0.24
+- Duyarlılık: 0.30
+- F1 Skoru: 0.20
+
+##### Connection_Status
+
+##### -Random Forest Classifier
+
+- Doğruluk: 0.66
+- Kesinlik: 0.67
+- Duyarlılık: 0.66
+- F1 Skoru: 0.66
+
+##### Energy_Consumption_kWh
+
+##### - Random Forest Regressor
+
+- MSE: 2.70
+- R² Skoru: 0.90
+
+## Proje Kod Yapısı
+-  project/
+  ├── dataset.csv
+  ├── main.py
+  ├── data_preprocessing.py
+  ├── model_training.py
+  ├── visualization.py
+
+## Araçlar ve Kütüphaneler
+#### Programlama Dili: 
+- Python
+
+#### Kütüphaneler:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- imbalanced-learn
+
+## Video Sunum
+- youtube linki eklenecektir.!!!!!!!!!!!
