@@ -52,7 +52,9 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
          data['Vibration_ms2'] = data['Vibration_ms2'].fillna(data['Vibration_ms2'].mean())
          data['Error_Status'] = data['Error_Status'].fillna(data['Error_Status'].mode()[0])
          data['Alerts'] = data['Alerts'].fillna(data['Alerts'].mode()[0])
-         # Sebep: 'Ortalama' --> sayısal verilerde genel eğilimi korurken 'En sık değer' --> kategorik sütunlarda sınıf dengesini korur.
+         # Sebep:
+         #'Ortalama' --> sayısal verilerde genel eğilimi korurken
+         #'En sık değer' --> kategorik sütunlarda sınıf dengesini korur. ```
 
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
 - Zaman tabanlı özellikler çıkarılmıştır (saat, gün).
@@ -62,7 +64,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
   ```
       data['Energy_per_Production'] = data['Energy_Consumption_kWh'] / (data['Production_Count'] + 1e-9)
-      data['Vibration_Temperature_Ratio'] = data['Vibration_ms2'] / (data['Temperature_C'] + 1e-9)
+      data['Vibration_Temperature_Ratio'] = data['Vibration_ms2'] / (data['Temperature_C'] + 1e-9) ```
 
 
 &nbsp;
