@@ -133,7 +133,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 &nbsp;
 
 
-## Proje Kod Yapısı
+## 🖥️ Proje Kod Yapısı
 project  
 ├── dataset.csv  
 ├── main.py  
