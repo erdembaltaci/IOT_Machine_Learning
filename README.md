@@ -76,10 +76,10 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 
 - Temperature_C, Vibration_ms2, Production_Count, ve Energy_Consumption_kWh değişkenlerinin dağılımını analiz etmek için histogramlar oluşturulmuştur.
 - Bu grafikler, verinin simetrik mi, çarpık mı olduğunu ve genel dağılım yapısını incelememizi sağlamıştır.
-<img src="Figure_1.png" alt="Temperature_C" width="450" align="center">
-<img src="Figure_2.png" alt="Vibration_ms2" width="450" align="center">
-<img src="Figure_3.png" alt="Production_Count" width="450" align="center">
-<img src="Figure_4.png" alt="Energy_Consumption_kWh" width="450" align="center">
+<img src="images/Figure_1.png" alt="Temperature_C" width="450" align="center">
+<img src="images/Figure_2.png" alt="Vibration_ms2" width="450" align="center">
+<img src="images/Figure_3.png" alt="Production_Count" width="450" align="center">
+<img src="images/Figure_4.png" alt="Energy_Consumption_kWh" width="450" align="center">
 &nbsp;
 
 #### 2. Korelasyon Matrisi ve Isı Haritası
