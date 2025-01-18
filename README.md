@@ -41,7 +41,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 
 
-## Metodoloji
+## ✅ Metodoloji
 
 ### 1. Veri Önişleme
 
