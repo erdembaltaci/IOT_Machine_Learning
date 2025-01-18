@@ -66,9 +66,6 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
       data['Energy_per_Production'] = data['Energy_Consumption_kWh'] / (data['Production_Count'] + 1e-9)
       data['Vibration_Temperature_Ratio'] = data['Vibration_ms2'] / (data['Temperature_C'] + 1e-9) ```
 
-
-&nbsp;
-
 ### 📊 2. Veri Görselleştirme
 Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlanmıştır:
 
