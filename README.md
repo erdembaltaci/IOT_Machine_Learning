@@ -51,7 +51,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Aşağıdaki gibi ek özellikler mühendisliği yapılmıştır:
   - Bir üretim birimi başına enerji tüketimi.
   - Titreşim ve sıcaklık oranı.
-
+&nbsp;
     
  
 ### 📊 2. Veri Görselleştirme
@@ -61,7 +61,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Çoklu değişken ilişkileri için 3D dağılım grafikleri.
 - Aykırı değerleri belirlemek için kutu grafikleri.
 
-  
+&nbsp;
 
 ### 🧠 3. Model Eğitimi ve Değerlendirme
 
@@ -75,7 +75,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 - Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilecek.
 
-  
+&nbsp; 
 
 ### 📈 4. Performans Metrikleri
 
