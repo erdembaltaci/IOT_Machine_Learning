@@ -70,11 +70,54 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 &nbsp;
 
 ### 📊 2. Veri Görselleştirme
+Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlanmıştır:
 
-- Temel sayısal değişkenler için histogramlar oluşturulmuştur.
-- Korelasyon matrisi ısı haritası kullanılmıştır.
-- Çoklu değişken ilişkileri için 3D dağılım grafikleri oluşturulmuştur.
-- Aykırı değerleri belirlemek için kutu grafikleri hazırlanmıştır.
+##### 1. Histogramlar
+
+- Temperature_C, Vibration_ms2, Production_Count, ve Energy_Consumption_kWh değişkenlerinin dağılımını analiz etmek için histogramlar oluşturulmuştur.
+- Bu grafikler, verinin simetrik mi, çarpık mı olduğunu ve genel dağılım yapısını incelememizi sağlamıştır.
+
+&nbsp;
+
+#### 2. Korelasyon Matrisi ve Isı Haritası
+
+- Tüm sayısal değişkenler arasındaki ilişkileri analiz etmek için bir korelasyon matrisi hazırlanmıştır.
+- Korelasyon matrisi ısı haritası olarak görselleştirilmiştir. Örneğin:
+     - Energy_Consumption_kWh ve Production_Count arasında yüksek pozitif bir korelasyon gözlenmiştir.
+     - Temperature_C ve Vibration_ms2 arasındaki zayıf negatif ilişki dikkat çekmiştir.
+
+&nbsp;
+
+#### 3. 3D Dağılım Grafikleri
+
+- Production_Count, Energy_Consumption_kWh ve Vibration_ms2 değişkenlerinin ilişkisini anlamak için 3D scatter grafikleri oluşturulmuştur.
+- Grafikler, bu üç değişkenin enerji tüketimi üzerindeki etkisini analiz etmeye yardımcı olmuştur.
+
+&nbsp;
+
+#### 4. Kutu Grafikler (Boxplots)
+
+- Aykırı değerleri belirlemek için Temperature_C, Vibration_ms2, Production_Count, ve Energy_Consumption_kWh 
+değişkenleri üzerinde kutu grafikleri hazırlanmıştır.
+- Bu grafikler, hangi değişkenlerde uç değerlerin yoğun olduğunu göstermiştir.
+  Örneğin:
+      - Production_Count için üst uç değerler gözlemlenmiştir.
+      - Energy_Consumption_kWh için aşırı değerlerin etkisi incelenmiştir.
+
+&nbsp; 
+
+#### 5. Dağılım Matrisleri (Pairplots)
+
+- Tüm sayısal değişkenler arasındaki ikili ilişkileri görselleştirmek için dağılım matrisleri oluşturulmuştur.
+- Bu grafikler, özellikle Production_Count ve Energy_Consumption_kWh arasında doğrusal bir ilişki olduğunu ortaya koymuştur.
+
+&nbsp;  
+
+#### Sonuçların Görselleştirilmesi
+
+Elde edilen görselleştirmeler, verinin genel yapısını anlamamızı ve modelleme süreci 
+için önemli içgörüler sağlamamızı kolaylaştırmıştır.
+
 
 &nbsp;
 
@@ -83,17 +126,29 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 #### Sınıflandırma Görevleri
 
 - Error_Status: Makine hataları Logistic Regression ile tahmin edilmiştir.
-     ```
+      ```
       Neden seçtik?
       İkili sınıflandırma problemi olduğu için.
       Basit ve açıklanabilir bir model.
 - Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilmiştir.
+      ```
+      Neden seçtik?
+      Çok sınıflı sınıflandırma problemleri için etkili bir başlangıç algoritması.
+      Karar süreçlerini açıkça görselleştirme imkanı sunar.
+
 - Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilmiştir.
+      ```
+      Neden seçtik?
+      Daha karmaşık sınıflandırma problemlerinde etkili.
+      Aykırı değerlere dayanıklı.
 
 #### Regresyon Görevi
 
 - Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilmiştir.
-
+      ```
+      Neden seçtik?
+      Doğrusal olmayan ilişkileri iyi öğrenir.
+      Sayısal bir tahmin problemi.
 
 &nbsp; 
 
@@ -134,7 +189,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Kesinlik: 0.24
 - Duyarlılık: 0.30
 - F1 Skoru: 0.20
-
+##### Yorum: Daha fazla veri ve özellik mühendisliğiyle performans artırılabilir.
 
 ##### Connection_Status (Random Forest Classifier)
 
@@ -142,22 +197,24 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Kesinlik: 0.67
 - Duyarlılık: 0.66
 - F1 Skoru: 0.66
-
+##### Yorum: İyi bir performans, ancak hiperparametre optimizasyonuyla daha da iyileştirilebilir.
 
 ##### Energy_Consumption_kWh (Random Forest Regressor)
 
 - MSE: 2.70
 - R² Skoru: 0.90
+##### Yorum: Yüksek bir doğruluk oranı, tahminler güvenilir.
 
 &nbsp;
 
-## 🔭 Sonuçların Yorumlanması
+## 🔭 Sonuçların Değerlendirilmesi
 
-- Error_Status: Logistic Regression sonuçları, sınıflandırma için temel bir performans sağlamaktadır ancak geliştirme gereklidir.
-- Alerts: Düşük başarı oranı, daha karmaşık algoritmalar veya özellik mühendisliği gerekliliğini işaret etmektedir.
-- Connection_Status: Random Forest Classifier, bağlantı durumunu makul bir doğrulukla tahmin edebilmiştir.
-- Energy_Consumption_kWh: Random Forest Regressor, enerji tüketimi tahmininde yüksek bir doğruluk oranı sağlamıştır.
+Sonuçlar iş problemlerine nasıl uygulanabilir?
 
+- Hata Tahmini: Logistic Regression, temel hata durumlarını anlamaya yönelik kullanılabilir.
+- Uyarı Tahmini: Decision Tree'nin düşük performansı, uyarı mekanizmalarının daha fazla veriyle desteklenmesi gerektiğini gösteriyor.
+- Bağlantı Durumu: Random Forest Classifier, fabrikalarda bağlantı sorunlarını önceden tahmin etmek için etkili bir araç olabilir.
+- Enerji Tüketimi: Enerji tahmini modeli, maliyet azaltma ve verimlilik artırma stratejileri için kullanılabilir.
 &nbsp;
 
 ## 🖥️ Proje Kod Yapısı
