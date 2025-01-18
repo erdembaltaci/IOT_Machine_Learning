@@ -3,9 +3,9 @@
 Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğrenmesi teknikleri kullanılarak analiz edilmesini kapsamaktadır. Analiz; veri önişleme, keşfedici veri analizi, görselleştirme, model eğitimi ve değerlendirme adımlarını içerir. Sonuçlar, bir fabrikadaki enerji tüketimi, hata tahmini ve makine uyarıları hakkında öngörüler sağlamaya yöneliktir.
 
 
+---
 
-
-## Amaçlar
+## 🎯 Amaçlar
 - Veri Analizi: Veri setini makine öğrenmesi için temizlemek ve önişlemek.
 - Model Eğitimi: Sınıflandırma (hata tahmini gibi) ve regresyon (enerji tüketimi tahmini gibi) için modeller eğitmek.
 - Görselleştirme: Veri hakkında görsel çıkarımlar sağlamak.
@@ -14,9 +14,9 @@ Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğr
 
 
 
+---
 
-
-## Veri Seti
+## 📊 Veri Seti
 
 ### Açıklama
 Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunlardan oluşmaktadır:
@@ -32,18 +32,18 @@ Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunl
 - Alerts: Makine tarafından tetiklenen uyarılar.
 
 
-  
+  ---
 
 ### Kaynak
 Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım firmasından alınmıştır.
 
 
 
-
+---
 
 ## ✅ Metodoloji
 
-### 1. Veri Önişleme
+### 🧹 1. Veri Önişleme
 
 - Eksik veriler uygun stratejilerle doldurulmuştur (sayısal veriler için ortalama, kategorik veriler için en sık değer).
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
@@ -54,7 +54,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
     
  
-### 2. Veri Görselleştirme
+### 📊 2. Veri Görselleştirme
 
 - Temel sayısal değişkenler için histogramlar.
 - Korelasyon matrisi ısı haritası.
@@ -63,7 +63,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
   
 
-### 3. Model Eğitimi ve Değerlendirme
+### 🧠 3. Model Eğitimi ve Değerlendirme
 
 #### Sınıflandırma Görevleri
 
@@ -91,7 +91,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Ortalama Kare Hatası (MSE)
 - R² Skoru
 
-
+---
 
 
 ## Sonuçlar
@@ -127,7 +127,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - MSE: 2.70
 - R² Skoru: 0.90
   
-
+---
 
 ## Proje Kod Yapısı
 project/
@@ -137,7 +137,7 @@ project/
   ├── model_training.py
   ├── visualization.py
 
-
+---
 
 ## Araçlar ve Kütüphaneler
 #### Programlama Dili: 
@@ -152,7 +152,7 @@ project/
 - scikit-learn
 - imbalanced-learn
 
-
+---
 
 ## Video Sunum
 - youtube linki eklenecektir.!!!!!!!!!!!
