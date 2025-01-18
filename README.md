@@ -107,7 +107,7 @@ değişkenleri üzerinde kutu grafikleri hazırlanmıştır.
   Örneğin:
       - Production_Count için üst uç değerler gözlemlenmiştir.
       - Energy_Consumption_kWh için aşırı değerlerin etkisi incelenmiştir.
-<img src="images/Figure_7.png" alt="Temperature_C" width="450" align="center">
+<img src="images/Figure_7.png" alt="Temperature_C" width="450" align="right">
 <img src="images/Figure_8.png" alt="Vibration_ms2" width="450" align="center">
 <img src="images/Figure_9.png" alt="Production_Count" width="450" align="center">
 <img src="images/Figure_10.png" alt="Energy_Consumption_kWh" width="450" align="center">
