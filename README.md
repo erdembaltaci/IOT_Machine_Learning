@@ -98,7 +98,7 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 - Production_Count, Energy_Consumption_kWh ve Vibration_ms2 değişkenlerinin ilişkisini anlamak için 3D scatter grafikleri oluşturulmuştur.
 - Grafikler, bu üç değişkenin enerji tüketimi üzerindeki etkisini analiz etmeye yardımcı olmuştur.
 
-<img src="Figure_6.png" alt="3D" width="1000" align="center">
+<img src="Figure_6.png" alt="3D" width="1200" align="left">
 
 &nbsp;
 
