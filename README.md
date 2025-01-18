@@ -88,7 +88,7 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 - Korelasyon matrisi ısı haritası olarak görselleştirilmiştir. Örneğin:
      - Energy_Consumption_kWh ve Production_Count arasında yüksek pozitif bir korelasyon gözlenmiştir.
      - Temperature_C ve Vibration_ms2 arasındaki zayıf negatif ilişki dikkat çekmiştir.
-<img src="Figure_5.png" alt="kolorasyon matrisi" width="800" align="center">
+<img src="images/Figure_5.png" alt="kolorasyon matrisi" width="800" align="center">
 
 
 &nbsp;
@@ -98,7 +98,7 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 - Production_Count, Energy_Consumption_kWh ve Vibration_ms2 değişkenlerinin ilişkisini anlamak için 3D scatter grafikleri oluşturulmuştur.
 - Grafikler, bu üç değişkenin enerji tüketimi üzerindeki etkisini analiz etmeye yardımcı olmuştur.
 
-<img src="Figure_6.png" alt="3D" width="1200" align="center">
+<img src="images/Figure_6.png" alt="3D" width="1200" align="center">
 
 &nbsp;
 
@@ -110,10 +110,10 @@ değişkenleri üzerinde kutu grafikleri hazırlanmıştır.
   Örneğin:
       - Production_Count için üst uç değerler gözlemlenmiştir.
       - Energy_Consumption_kWh için aşırı değerlerin etkisi incelenmiştir.
-<img src="Figure_7.png" alt="Temperature_C" width="450" align="center">
-<img src="Figure_8.png" alt="Vibration_ms2" width="450" align="center">
-<img src="Figure_9.png" alt="Production_Count" width="450" align="center">
-<img src="Figure_10.png" alt="Energy_Consumption_kWh" width="450" align="center">
+<img src="images/Figure_7.png" alt="Temperature_C" width="450" align="center">
+<img src="images/Figure_8.png" alt="Vibration_ms2" width="450" align="center">
+<img src="images/Figure_9.png" alt="Production_Count" width="450" align="center">
+<img src="images/Figure_10.png" alt="Energy_Consumption_kWh" width="450" align="center">
 
 &nbsp; 
 
