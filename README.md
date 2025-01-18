@@ -2,12 +2,14 @@
 
 Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğrenmesi teknikleri kullanılarak analiz edilmesini kapsamaktadır. Analiz; veri önişleme, keşfedici veri analizi, görselleştirme, model eğitimi ve değerlendirme adımlarını içerir. Sonuçlar, bir fabrikadaki enerji tüketimi, hata tahmini ve makine uyarıları hakkında öngörüler sağlamaya yöneliktir.
 
+
 ## Amaçlar
 - Veri Analizi: Veri setini makine öğrenmesi için temizlemek ve önişlemek.
 - Model Eğitimi: Sınıflandırma (hata tahmini gibi) ve regresyon (enerji tüketimi tahmini gibi) için modeller eğitmek.
 - Görselleştirme: Veri hakkında görsel çıkarımlar sağlamak.
 - Değerlendirme: Uygun metriklerle model performansını değerlendirmek.
 - Döküman Hazırlama: Tüm süreci, kodu ve sonuçları net bir şekilde açıklamak.
+
 
 
 ## Veri Seti
@@ -24,9 +26,12 @@ Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunl
 - Energy_Consumption_kWh: Enerji tüketimi (kWh cinsinden).
 - Connection_Status: Makine bağlantı durumu (0 veya 1).
 - Alerts: Makine tarafından tetiklenen uyarılar.
+  
 
 ### Kaynak
 Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım firmasından alınmıştır.
+
+
 
 ## Metodoloji
 
@@ -38,6 +43,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Aşağıdaki gibi ek özellikler mühendisliği yapılmıştır:
   - Bir üretim birimi başına enerji tüketimi.
   - Titreşim ve sıcaklık oranı.
+    
  
 ### 2. Veri Görselleştirme
 
@@ -45,6 +51,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Korelasyon matrisi ısı haritası.
 - Çoklu değişken ilişkileri için 3D dağılım grafikleri.
 - Aykırı değerleri belirlemek için kutu grafikleri.
+  
 
 ### 3. Model Eğitimi ve Değerlendirme
 
@@ -57,6 +64,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 #### Regresyon Görevi
 
 - Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilecek.
+  
 
 ### 4. Performans Metrikleri
 
@@ -72,51 +80,47 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Ortalama Kare Hatası (MSE)
 - R² Skoru
 
+
+
 ## Sonuçlar
 
 #### Model Performansı
 
-##### Error_Status
-
-##### - Logistic Regression
+##### Error_Status (Logistic Regression)
 
 - Doğruluk: 0.55
 - Kesinlik: 0.55
 - Duyarlılık: 0.55
 - F1 Skoru: 0.55
 
-##### Alerts
-
-##### - Decision Tree Classifier
+##### Alerts (Decision Tree Classifier)
 
 - Doğruluk: 0.30
 - Kesinlik: 0.24
 - Duyarlılık: 0.30
 - F1 Skoru: 0.20
 
-##### Connection_Status
-
-##### -Random Forest Classifier
+##### Connection_Status (Random Forest Classifier)
 
 - Doğruluk: 0.66
 - Kesinlik: 0.67
 - Duyarlılık: 0.66
 - F1 Skoru: 0.66
 
-##### Energy_Consumption_kWh
-
-##### - Random Forest Regressor
+##### Energy_Consumption_kWh (Random Forest Regressor)
 
 - MSE: 2.70
 - R² Skoru: 0.90
+  
 
 ## Proje Kod Yapısı
--  project/
+project/
   ├── dataset.csv
   ├── main.py
   ├── data_preprocessing.py
   ├── model_training.py
   ├── visualization.py
+
 
 ## Araçlar ve Kütüphaneler
 #### Programlama Dili: 
@@ -130,6 +134,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - seaborn
 - scikit-learn
 - imbalanced-learn
+
 
 ## Video Sunum
 - youtube linki eklenecektir.!!!!!!!!!!!
