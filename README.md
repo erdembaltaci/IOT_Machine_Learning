@@ -137,18 +137,18 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 #### Sınıflandırma Görevleri
 
 - Error_Status: Makine hataları Logistic Regression ile tahmin edilmiştir.
-      ```
+  ```
       Neden seçtik?
       İkili sınıflandırma problemi olduğu için.
       Basit ve açıklanabilir bir model.
 - Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilmiştir.
-      ```
+  ```
       Neden seçtik?
       Çok sınıflı sınıflandırma problemleri için etkili bir başlangıç algoritması.
       Karar süreçlerini açıkça görselleştirme imkanı sunar.
 
 - Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilmiştir.
-      ```
+  ```
       Neden seçtik?
       Daha karmaşık sınıflandırma problemlerinde etkili.
       Aykırı değerlere dayanıklı.
@@ -156,7 +156,7 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 #### Regresyon Görevi
 
 - Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilmiştir.
-      ```
+  ```
       Neden seçtik?
       Doğrusal olmayan ilişkileri iyi öğrenir.
       Sayısal bir tahmin problemi.
