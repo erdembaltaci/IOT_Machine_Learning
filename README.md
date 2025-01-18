@@ -58,10 +58,10 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
  
 ### 📊 2. Veri Görselleştirme
 
-- Temel sayısal değişkenler için histogramlar.
-- Korelasyon matrisi ısı haritası.
-- Çoklu değişken ilişkileri için 3D dağılım grafikleri.
-- Aykırı değerleri belirlemek için kutu grafikleri.
+- Temel sayısal değişkenler için histogramlar oluşturulmuştur.
+- Korelasyon matrisi ısı haritası kullanılmıştır.
+- Çoklu değişken ilişkileri için 3D dağılım grafikleri oluşturulmuştur.
+- Aykırı değerleri belirlemek için kutu grafikleri hazırlanmıştır.
 
 &nbsp;
 
@@ -69,13 +69,14 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 #### Sınıflandırma Görevleri
 
-- Error_Status: Makine hataları Logistic Regression ile tahmin edilecek.
-- Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilecek.
-- Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilecek.
+- Error_Status: Makine hataları Logistic Regression ile tahmin edilmiştir.
+- Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilmiştir.
+- Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilmiştir.
 
 #### Regresyon Görevi
 
-- Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilecek.
+- Energy_Consumption_kWh: Enerji tüketimi Random Forest Regressor ile tahmin edilmiştir.
+
 
 &nbsp; 
 
@@ -83,15 +84,15 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 #### Sınıflandırma
 
-- Doğruluk (Accuracy)
-- Kesinlik (Precision)
-- Duyarlılık (Recall)
-- F1 Skoru
+- Doğruluk (Accuracy): Modelin doğru tahmin oranı.
+- Kesinlik (Precision): Doğru pozitiflerin toplam pozitif tahmine oranı.
+- Duyarlılık (Recall): Doğru pozitiflerin toplam gerçek pozitiflere oranı.
+- F1 Skoru: Kesinlik ve duyarlılığın harmonik ortalaması.
 
 #### Regresyon
 
-- Ortalama Kare Hatası (MSE)
-- R² Skoru
+- Ortalama Kare Hatası (MSE): Tahmin edilen değerlerin gerçek değerlerden sapmasını ölçer.
+- R² Skoru: Modelin açıklayıcılık oranını belirtir.
 
 &nbsp;
 
@@ -132,14 +133,22 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 &nbsp;
 
+## 🔭 Sonuçların Yorumlanması
+
+- Error_Status: Logistic Regression sonuçları, sınıflandırma için temel bir performans sağlamaktadır ancak geliştirme gereklidir.
+- Alerts: Düşük başarı oranı, daha karmaşık algoritmalar veya özellik mühendisliği gerekliliğini işaret etmektedir.
+- Connection_Status: Random Forest Classifier, bağlantı durumunu makul bir doğrulukla tahmin edebilmiştir.
+- Energy_Consumption_kWh: Random Forest Regressor, enerji tüketimi tahmininde yüksek bir doğruluk oranı sağlamıştır.
+
+&nbsp;
 
 ## 🖥️ Proje Kod Yapısı
-project  
-├── dataset.csv  
-├── main.py  
-├── data_preprocessing.py  
-├── model_training.py  
-├── visualization.py 
+project/
+├── dataset.csv                # Veri seti
+├── main.py                    # Ana Python scripti
+├── data_preprocessing.py      # Veri önişleme modülü
+├── model_training.py          # Model eğitim modülü
+├── visualization.py           # Görselleştirme modülü
 
 &nbsp;
 
@@ -161,4 +170,12 @@ project
 
 
 ## ▶️ Video Sunum
-- youtube linki eklenecektir.!!!!!!!!!!!
+- Proje sunumunu izlemek için [YouTube bağlantısı eklenecektir.]
+
+&nbsp;
+
+## 📅 Gelecek Çalışmalar
+
+- Model performansını artırmak için hiperparametre optimizasyonu yapılabilir.
+- IoT verilerinden daha fazla anlamlı özellik türetilebilir.
+- XGBoost veya LightGBM gibi ileri algoritmalar uygulanabilir.
