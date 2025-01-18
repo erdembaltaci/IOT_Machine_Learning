@@ -144,11 +144,11 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 ## 🖥️ Proje Kod Yapısı
 project/  <br>
-├── dataset.csv               (Veri seti)  <br>
-├── main.py                   (Ana Python scripti) <br>
-├── data_preprocessing.py     (Veri önişleme modülü) <br>
-├── model_training.py         (Model eğitim modülü) <br>
-├── visualization.py          (Görselleştirme modülü) <br>
+├── dataset.csv                # Veri seti  <br>
+├── main.py                    # Ana Python scripti <br>
+├── data_preprocessing.py      # Veri önişleme modülü <br>
+├── model_training.py          # Model eğitim modülü <br>
+├── visualization.py           # Görselleştirme modülü <br>
 
 &nbsp;
 
