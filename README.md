@@ -51,6 +51,8 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Aşağıdaki gibi ek özellikler mühendisliği yapılmıştır:
   - Bir üretim birimi başına enerji tüketimi.
   - Titreşim ve sıcaklık oranı.
+
+&nbsp;
 &nbsp;
     
  
