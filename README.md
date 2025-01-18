@@ -54,7 +54,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
          data['Alerts'] = data['Alerts'].fillna(data['Alerts'].mode()[0])
          # Sebep:
          #'Ortalama' --> sayısal verilerde genel eğilimi korurken
-         #'En sık değer' --> kategorik sütunlarda sınıf dengesini korur. ```
+         #'En sık değer' --> kategorik sütunlarda sınıf dengesini korur. 
 
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
 - Zaman tabanlı özellikler çıkarılmıştır (saat, gün).
