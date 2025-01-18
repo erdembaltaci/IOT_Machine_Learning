@@ -52,12 +52,18 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
          data['Vibration_ms2'] = data['Vibration_ms2'].fillna(data['Vibration_ms2'].mean())
          data['Error_Status'] = data['Error_Status'].fillna(data['Error_Status'].mode()[0])
          data['Alerts'] = data['Alerts'].fillna(data['Alerts'].mode()[0])
+         # Sebep: 'Ortalama' --> sayısal verilerde genel eğilimi korurken 'En sık değer' --> kategorik sütunlarda sınıf dengesini korur.
 
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
 - Zaman tabanlı özellikler çıkarılmıştır (saat, gün).
 - Aşağıdaki gibi ek özellikler mühendisliği yapılmıştır:
-  - Bir üretim birimi başına enerji tüketimi.
-  - Titreşim ve sıcaklık oranı.
+  - Bir üretim birimi başına enerji tüketimi.(Enerji verimliliğini ölçmek için)
+  - Titreşim ve sıcaklık oranı. (Makine titreşimi ve sıcaklık arasındaki ilişkiyi analiz etmek için)
+
+ ```
+      data['Energy_per_Production'] = data['Energy_Consumption_kWh'] / (data['Production_Count'] + 1e-9)
+      data['Vibration_Temperature_Ratio'] = data['Vibration_ms2'] / (data['Temperature_C'] + 1e-9)
+
 
 &nbsp;
 &nbsp;
@@ -77,6 +83,10 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 #### Sınıflandırma Görevleri
 
 - Error_Status: Makine hataları Logistic Regression ile tahmin edilmiştir.
+     ```
+      Neden seçtik?
+      İkili sınıflandırma problemi olduğu için.
+      Basit ve açıklanabilir bir model.
 - Alerts: Makine uyarıları Decision Tree Classifier ile tahmin edilmiştir.
 - Connection_Status: Bağlantı durumu Random Forest Classifier ile tahmin edilmiştir.
 
@@ -115,6 +125,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - Kesinlik: 0.55
 - Duyarlılık: 0.55
 - F1 Skoru: 0.55
+##### Yorum: Model, düşük performans gösterdiği için ek özellik mühendisliği veya daha karmaşık algoritmalar kullanılabilir.
 
 
 ##### Alerts (Decision Tree Classifier)
