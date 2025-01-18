@@ -4,6 +4,8 @@ Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğr
 
 
 ---
+---
+---
 
 ## 🎯 Amaçlar
 - Veri Analizi: Veri setini makine öğrenmesi için temizlemek ve önişlemek.
