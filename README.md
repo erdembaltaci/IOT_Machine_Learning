@@ -3,8 +3,7 @@
 Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğrenmesi teknikleri kullanılarak analiz edilmesini kapsamaktadır. Analiz; veri önişleme, keşfedici veri analizi, görselleştirme, model eğitimi ve değerlendirme adımlarını içerir. Sonuçlar, bir fabrikadaki enerji tüketimi, hata tahmini ve makine uyarıları hakkında öngörüler sağlamaya yöneliktir.
 
 &nbsp;
----
-&nbsp;
+
 
 ## 🎯 Amaçlar
 - Veri Analizi: Veri setini makine öğrenmesi için temizlemek ve önişlemek.
@@ -15,8 +14,7 @@ Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğr
 
 
 &nbsp;
----
-&nbsp;
+
 
 ## 📊 Veri Seti
 
@@ -34,16 +32,14 @@ Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunl
 - Alerts: Makine tarafından tetiklenen uyarılar.
 
 &nbsp;
----
-&nbsp;
+
 
 ### Kaynak
 Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım firmasından alınmıştır.
 
 
 &nbsp;
----
-&nbsp;
+
 
 ## ✅ Metodoloji
 
@@ -96,8 +92,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - R² Skoru
 
 &nbsp;
----
-&nbsp;
+
 
 
 ## Sonuçlar
@@ -134,8 +129,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 - R² Skoru: 0.90
 
 &nbsp;
----
-&nbsp;
+
 
 ## Proje Kod Yapısı
 project/
@@ -146,8 +140,7 @@ project/
   ├── visualization.py
 
 &nbsp;
----
-&nbsp;
+
 
 ## Araçlar ve Kütüphaneler
 #### Programlama Dili: 
@@ -163,8 +156,7 @@ project/
 - imbalanced-learn
 
 &nbsp;
----
-&nbsp;
+
 
 ## Video Sunum
 - youtube linki eklenecektir.!!!!!!!!!!!
