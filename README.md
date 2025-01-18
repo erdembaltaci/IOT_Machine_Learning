@@ -15,6 +15,7 @@ Bu proje, bir fabrikadaki makinelerden IOT ile alınan veri setinin makine öğr
 
 
 
+
 ## Veri Seti
 
 ### Açıklama
