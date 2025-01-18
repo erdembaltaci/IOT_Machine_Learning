@@ -47,10 +47,11 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 - Eksik veriler uygun stratejilerle doldurulmuştur (sayısal veriler için ortalama, kategorik veriler için en sık değer).
 
-   ```  data['Temperature_C'] = data['Temperature_C'].fillna(data['Temperature_C'].mean())
-        data['Vibration_ms2'] = data['Vibration_ms2'].fillna(data['Vibration_ms2'].mean())
-        data['Error_Status'] = data['Error_Status'].fillna(data['Error_Status'].mode()[0])
-        data['Alerts'] = data['Alerts'].fillna(data['Alerts'].mode()[0])
+   ```
+         data['Temperature_C'] = data['Temperature_C'].fillna(data['Temperature_C'].mean())
+         data['Vibration_ms2'] = data['Vibration_ms2'].fillna(data['Vibration_ms2'].mean())
+         data['Error_Status'] = data['Error_Status'].fillna(data['Error_Status'].mode()[0])
+         data['Alerts'] = data['Alerts'].fillna(data['Alerts'].mode()[0])
 
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
 - Zaman tabanlı özellikler çıkarılmıştır (saat, gün).
