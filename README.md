@@ -34,7 +34,7 @@ Veri seti, bir fabrikadan IoT sensör okumalarını içermektedir ve şu sütunl
 &nbsp;
 
 
-### Kaynak
+### 📘 Kaynak
 Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım firmasından alınmıştır.
 
 
@@ -43,7 +43,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 ## ✅ Metodoloji
 
-### 🧹 1. Veri Önişleme
+###  🛠 1. Veri Önişleme
 
 - Eksik veriler uygun stratejilerle doldurulmuştur (sayısal veriler için ortalama, kategorik veriler için en sık değer).
 - Kategorik sütunlar için etiket kodlama (label encoding) yapılmıştır.
@@ -97,7 +97,7 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 
 
-## Sonuçlar
+## 🔍 Sonuçlar
 
 #### Model Performansı
 
@@ -134,21 +134,21 @@ Bu veri seti ham bir şekilde ,fabrikalara IOT çözümü sunan bir yazılım fi
 
 
 ## Proje Kod Yapısı
-project/
-  ├── dataset.csv
-  ├── main.py
-  ├── data_preprocessing.py
-  ├── model_training.py
-  ├── visualization.py
+project/ &nbsp;
+  ├── dataset.csv &nbsp;
+  ├── main.py &nbsp;
+  ├── data_preprocessing.py &nbsp;
+  ├── model_training.py &nbsp;
+  ├── visualization.py &nbsp;&nbsp;
 
 &nbsp;
 
 
 ## Araçlar ve Kütüphaneler
 #### Programlama Dili: 
-- Python
+- 🐍 Python
 
-#### Kütüphaneler:
+#### 📦 Kütüphaneler:
 
 - pandas
 - numpy
@@ -160,5 +160,5 @@ project/
 &nbsp;
 
 
-## Video Sunum
+## ▶️ Video Sunum
 - youtube linki eklenecektir.!!!!!!!!!!!
