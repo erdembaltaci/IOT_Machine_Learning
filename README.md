@@ -85,7 +85,7 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 - Korelasyon matrisi ısı haritası olarak görselleştirilmiştir. Örneğin:
      - Energy_Consumption_kWh ve Production_Count arasında yüksek pozitif bir korelasyon gözlenmiştir.
      - Temperature_C ve Vibration_ms2 arasındaki zayıf negatif ilişki dikkat çekmiştir.
-<img src="Figure_5.png" alt="kolorasyon matrisi" width="200" align="center">
+<img src="Figure_5.png" alt="kolorasyon matrisi" width="600" align="center">
 
 
 &nbsp;
