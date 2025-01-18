@@ -191,7 +191,8 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 - Kesinlik: 0.55
 - Duyarlılık: 0.55
 - F1 Skoru: 0.55
-##### Yorum: Model, düşük performans gösterdiği için ek özellik mühendisliği veya daha karmaşık algoritmalar kullanılabilir.
+  ```
+      Yorum: Model, düşük performans gösterdiği için ek özellik mühendisliği veya daha karmaşık algoritmalar kullanılabilir.
 
 
 ##### Alerts (Decision Tree Classifier)
@@ -200,7 +201,8 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 - Kesinlik: 0.24
 - Duyarlılık: 0.30
 - F1 Skoru: 0.20
-##### Yorum: Daha fazla veri ve özellik mühendisliğiyle performans artırılabilir.
+   ```
+      Yorum: Daha fazla veri ve özellik mühendisliğiyle performans artırılabilir.
 
 ##### Connection_Status (Random Forest Classifier)
 
@@ -208,13 +210,15 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 - Kesinlik: 0.67
 - Duyarlılık: 0.66
 - F1 Skoru: 0.66
-##### Yorum: İyi bir performans, ancak hiperparametre optimizasyonuyla daha da iyileştirilebilir.
+   ```
+   Yorum: İyi bir performans, ancak hiperparametre optimizasyonuyla daha da iyileştirilebilir.
 
 ##### Energy_Consumption_kWh (Random Forest Regressor)
 
 - MSE: 2.70
 - R² Skoru: 0.90
-##### Yorum: Yüksek bir doğruluk oranı, tahminler güvenilir.
+   ```
+    Yorum: Yüksek bir doğruluk oranı, tahminler güvenilir.
 
 &nbsp;
 
