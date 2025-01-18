@@ -76,9 +76,9 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 
 - Temperature_C, Vibration_ms2, Production_Count, ve Energy_Consumption_kWh değişkenlerinin dağılımını analiz etmek için histogramlar oluşturulmuştur.
 - Bu grafikler, verinin simetrik mi, çarpık mı olduğunu ve genel dağılım yapısını incelememizi sağlamıştır.
-<img src="Figure_1.png" alt="Temperature_C" width="450" align="left">
+<img src="Figure_1.png" alt="Temperature_C" width="450" align="center">
 <img src="Figure_2.png" alt="Vibration_ms2" width="450" align="center">
-<img src="Figure_3.png" alt="Production_Count" width="450" align="left">
+<img src="Figure_3.png" alt="Production_Count" width="450" align="center">
 <img src="Figure_4.png" alt="Energy_Consumption_kWh" width="450" align="center">
 &nbsp;
 
@@ -98,7 +98,7 @@ Veri görselleştirme aşamasında aşağıdaki analizler ve grafikler hazırlan
 - Production_Count, Energy_Consumption_kWh ve Vibration_ms2 değişkenlerinin ilişkisini anlamak için 3D scatter grafikleri oluşturulmuştur.
 - Grafikler, bu üç değişkenin enerji tüketimi üzerindeki etkisini analiz etmeye yardımcı olmuştur.
 
-<img src="Figure_6.png" alt="3D" width="1200" align="left">
+<img src="Figure_6.png" alt="3D" width="1200" align="center">
 
 &nbsp;
 
@@ -110,9 +110,9 @@ değişkenleri üzerinde kutu grafikleri hazırlanmıştır.
   Örneğin:
       - Production_Count için üst uç değerler gözlemlenmiştir.
       - Energy_Consumption_kWh için aşırı değerlerin etkisi incelenmiştir.
-<img src="Figure_7.png" alt="Temperature_C" width="450" align="left">
+<img src="Figure_7.png" alt="Temperature_C" width="450" align="center">
 <img src="Figure_8.png" alt="Vibration_ms2" width="450" align="center">
-<img src="Figure_9.png" alt="Production_Count" width="450" align="left">
+<img src="Figure_9.png" alt="Production_Count" width="450" align="center">
 <img src="Figure_10.png" alt="Energy_Consumption_kWh" width="450" align="center">
 
 &nbsp; 
