@@ -253,7 +253,7 @@ project/  <br>
 
 
 ## ▶️ Video Sunum
-- Proje sunumunu izlemek için [YouTube bağlantısı eklenecektir.]
+- Proje sunumunu izlemek için https://youtu.be/GlSnvwiHRtA?si=AGebFhZS9QtanMg-
 
 &nbsp;
 
