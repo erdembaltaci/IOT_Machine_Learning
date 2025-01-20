@@ -193,10 +193,10 @@ için önemli içgörüler sağlamamızı kolaylaştırmıştır.
 
 ##### Alerts (Decision Tree Classifier)
 
-- Doğruluk: 0.30
-- Kesinlik: 0.24
-- Duyarlılık: 0.30
-- F1 Skoru: 0.20
+- Doğruluk: 0.64
+- Kesinlik: 0.62
+- Duyarlılık: 0.65
+- F1 Skoru: 0.60
    ```
       Yorum: Daha fazla veri ve özellik mühendisliğiyle performans artırılabilir.
 
